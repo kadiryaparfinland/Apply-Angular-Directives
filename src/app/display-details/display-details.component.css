@@ -1,0 +1,31 @@
+button{
+    height: 50px;
+    width: 150px;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 10px;
+}
+p{
+    background-color: lightgray;
+    font-size: larger;
+    padding: 10px;
+    text-align: center;
+}
+
+.container{
+
+}
+
+.child{
+    
+  width: 600px;
+  height: 500px;
+    margin: 0 auto;
+}
+
+.log{
+    
+  width: 600px;
+  height: 30px;
+    text-align: center;
+}

@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="child">
+    <button (click)="hideDetails()">{{ buttonText }}</button>
+    <p *ngIf="showDetails">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam dolore
+      nesciunt culpa exercitationem, aspernatur numquam accusantium architecto!
+      Aliquid consequuntur quis minima consectetur modi quae, iste quam nisi
+      eius esse.
+    </p>
+    <div *ngFor="let log of logEvents; index as i">
+      <p class="log"
+        [ngStyle]="{
+          'background-color': numClicks === 5 && i === stopNum ? 'black' : 'white',
+          color: numClicks === 5 && i === stopNum  ? 'white' : 'black'
+        }"
+      >
+        {{ log }}
+      </p>
+    </div>
+  </div>
+</div>
